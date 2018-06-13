@@ -6,6 +6,7 @@ inform "Checking for XCode Command Line Tools..." true
 
 # Check that command line tools are installed
 case $OS_VERSION in
+  *10.13*) cmdline_version="CLTools_Executables" ;; # High Sierra
   *10.12*) cmdline_version="CLTools_Executables" ;; # Sierra
   *10.11*) cmdline_version="CLTools_Executables" ;; # El Capitan
   *10.10*) cmdline_version="CLTools_Executables" ;; # Yosemite
